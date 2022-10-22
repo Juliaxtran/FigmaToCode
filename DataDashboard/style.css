@@ -29,7 +29,7 @@ section {
 }
 
 nav {
-  display: none;
+  /* display: none; */
 }
 
 .logo {
@@ -98,4 +98,38 @@ h1 {
 
 .cta:hover {
   background: var(--primary-color);
+}
+
+nav {
+  position: fixed;
+  z-index: 1;
+  background: #2c2931;
+  left : 0;
+  top: 0;
+  height: 100vh;
+  max-width: 400px;
+}
+
+
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+
+nav ul li {
+  width: 100%;
+
+}
+
+nav ul li a {
+  text-decoration: none;
+  color:white;
+  display: block;
+  padding: .875em 5em .875em 4em;
+}
+.back-btn {
+  transform: scaleX(-1)
 }
