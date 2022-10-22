@@ -124,12 +124,35 @@ nav ul li {
 
 }
 
+/* Want to put padding on the link because that is what we are going to hovering over  */
 nav ul li a {
   text-decoration: none;
   color:white;
   display: block;
   padding: .875em 5em .875em 4em;
 }
+
+
+nav ul li a:hover {
+  background: #413E47;
+}
+
+
 .back-btn {
-  transform: scaleX(-1)
+  transform: scaleX(-1);
+  padding: 3em 4em 2em;
+  cursor: pointer;
+  transition: transform .3s;
+}
+
+.back-btn:hover {
+  transform: scaleX(-1) translateX(6px);
+}
+
+.active {
+  background: var(--primary-color);
+}
+
+.active:hover {
+  background-color: #4497FF;
 }
