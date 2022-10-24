@@ -39,12 +39,92 @@ body {
   z-index: -1;
 }
 
-.light-streaks{
-  background: #B2DD9E url('./assets/blur.jpg');
+.light-streaks {
+  background: #b2dd9e url("./assets/blur.jpg");
   background-blend-mode: screen;
   background-size: cover;
 }
 
-.blue-col{
+.blue-col {
   background-color: #7988be;
+}
+
+.container {
+  margin: 0 1em;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  display: inline-block;
+  background-color: black;
+  padding: 0.2em 0.4em;
+  color: white;
+  font-size: 1.8rem;
+}
+
+.logo span {
+  color: #6889ff;
+}
+
+nav ul {
+  display: none;
+}
+
+.content {
+  text-align: center;
+  margin: 8em 3em 0;
+  height: 75vh;
+}
+
+h1 {
+  font-size: 3em;
+  font-weight: normal;
+  line-height: 92%;
+}
+
+.type p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.125rem;
+  line-height: 141.6%;
+}
+
+.drone-container {
+  position: relative;
+  margin: 5em auto;
+  width: 65%;
+}
+
+.blur,
+.drone {
+  position: absolute;
+  left: 0;
+}
+
+.drone {
+  opacity: .75;
+}
+.blur {
+  opacity: 0.5;
+  top: 1em;
+  animation: pulse 2s alternate-reverse infinite;
+}
+
+.drone {
+  animation:hover 2s alternate-reverse infinite;
+}
+
+@keyframes hover {
+  from {
+    transform: translateY(-30px);
+  }
+}
+
+@keyframes pulse {
+  from {
+    opacity: 0;
+  }
 }
