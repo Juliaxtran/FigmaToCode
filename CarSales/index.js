@@ -1,6 +1,7 @@
 const menuBtn = document.querySelector('.menu');
 const panel = document.querySelector('.filter');
 const panelStyles = window.getComputedStyle(panel);
+const hears = document.querySelectorAll('.far');
 
 menuBtn.addEventListener('click', () => {
 
@@ -20,4 +21,10 @@ document.addEventListener('mouseup', (event) => {
       panel.style.clipPath = 'circle(0% at 100% 0%)'
     }
   }
-})
+});
+
+function changeHeart(x) {
+  x.classList.toggle('fas');
+  x.classList.toggle('far');
+}
+
