@@ -252,3 +252,69 @@ h2 {
   grid-area: e;
 }
 
+/*Section 3 -  Contact form */
+
+.contact {
+  background: #b2dd9e
+}
+
+h3 {
+  padding: 1em 1em 1em 10%;
+  font-size: 2rem;
+  background-color: #9fc88c;
+  display: inline-block;
+  margin: 0;
+  font-weight: normal;
+  width: 90%;
+}
+
+.cols-2{
+  width: 90%;
+  margin: 2em 2em 2em 10%;
+  padding-right: 2em;
+  padding-bottom: 2em;
+}
+
+label {
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: .5em;
+}
+
+input {
+  width: 100%;
+  border:none;
+  padding: 1em;
+  margin-bottom: 2em;
+}
+
+button {
+  background-color: black;
+  border: none;
+  padding: .8em;
+  width: 100%;
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+
+.other-info {
+  margin-top: 3em;
+  width: 50%;
+}
+
+.other-info ul li {
+  padding: .5em;
+  border-bottom: 1px solid rgba(0,0,0,.2);
+  display: block;
+  border-radius: .2em;
+  font-family: 'Montserrat', sans-serif;
+  font-size: .9rem;
+}
+
+.other-info a {
+  color: black;
+}
